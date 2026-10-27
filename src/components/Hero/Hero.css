@@ -1,0 +1,15 @@
+.hero {
+  background: #1b565d;
+  color: #f9f4e8;
+  min-height: 34rem;
+  padding: 7rem 1.5rem;
+  text-align: center;
+}
+
+.hero h1 { font-size: clamp(2.8rem, 6vw, 5.4rem); letter-spacing: -0.06em; line-height: 0.98; margin: 0 auto 1.7rem; max-width: 15ch; }
+.hero h1 span { color: #f6bd60; }
+.hero-copy { color: #d2e5e1; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.65; margin: 0 auto 2.4rem; max-width: 38rem; }
+.hero-button { background: #f6bd60; border-radius: 999px; color: #12343b; display: inline-block; font-weight: 800; padding: 1rem 1.8rem; transition: transform 160ms ease, background 160ms ease; }
+.hero-button:hover, .hero-button:focus-visible { background: #ffe0a5; transform: translateY(-3px); }
+
+@media (max-width: 540px) { .hero { min-height: auto; padding-block: 5rem; } }

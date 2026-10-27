@@ -1,0 +1,9 @@
+.enrollment { background: #12343b; color: #f9f4e8; padding: 6rem 1.5rem; text-align: center; }
+.enrollment h2 { font-size: clamp(2rem, 4vw, 3.1rem); letter-spacing: -0.055em; margin: 0 auto 0.9rem; max-width: 18ch; }
+.enrollment > p { color: #c5dcd7; margin: 0 0 2.3rem; }
+.counter-box { align-items: center; background: #1b565d; border: 1px solid #38767a; border-radius: 1rem; display: flex; gap: 2rem; justify-content: center; margin: auto; padding: 1rem 1.4rem; width: fit-content; }
+.counter-box button { background: #f6bd60; border: 0; border-radius: 50%; color: #12343b; font-size: 1.7rem; height: 3.5rem; line-height: 1; width: 3.5rem; }
+.counter-box button:hover:not(:disabled), .counter-box button:focus-visible { background: #ffe0a5; }
+.counter-box button:disabled { cursor: not-allowed; opacity: 0.4; }
+.counter-box strong { color: #fff; font-size: 3rem; min-width: 3ch; }
+.counter-caption { color: #c5dcd7; display: block; margin-top: 1.3rem; }

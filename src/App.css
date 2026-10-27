@@ -1,0 +1,35 @@
+main { overflow: hidden; }
+
+.page-shell { min-height: calc(100vh - 12rem); }
+.page-heading { background: #1b565d; color: #f9f4e8; padding: 4rem 1.5rem; text-align: center; }
+.page-heading h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: -0.06em; margin: 0 0 1rem; }
+.page-heading p { color: #d2e5e1; line-height: 1.65; margin: auto; max-width: 42rem; }
+
+.about-content { display: grid; gap: 3rem; grid-template-columns: 1.2fr 0.8fr; margin: auto; max-width: 72rem; padding: 5rem 1.5rem; }
+.about-content h2 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.05em; margin: 0 0 1rem; }
+.about-content p { color: #526466; line-height: 1.75; margin: 0; }
+.about-note { align-self: start; background: #fffdf7; border: 1px solid #e4ddd0; border-radius: 1rem; box-shadow: 0 12px 28px rgba(18, 52, 59, 0.1); padding: 2rem; }
+.about-note strong { color: #1b565d; display: block; font-size: 1.4rem; margin-bottom: 0.7rem; }
+
+.login-wrap { display: grid; min-height: calc(100vh - 12rem); place-items: center; padding: 4rem 1.5rem; }
+.login-card { background: #fffdf7; border: 1px solid #e4ddd0; border-radius: 1rem; box-shadow: 0 18px 36px rgba(18, 52, 59, 0.14); max-width: 28rem; padding: 2.5rem; width: 100%; }
+.login-card h1 { font-size: 2.4rem; letter-spacing: -0.055em; margin: 0 0 0.5rem; }
+.login-card > p { color: #526466; line-height: 1.55; margin: 0 0 2rem; }
+.login-card form { display: grid; gap: 1.2rem; }
+.login-card label { display: grid; font-weight: 700; gap: 0.5rem; }
+.login-card input { background: #fff; border: 1px solid #9aacaa; border-radius: 0.65rem; color: #172033; font: inherit; padding: 0.9rem 1rem; width: 100%; }
+.login-card input:focus { border-color: #1b565d; outline: 3px solid rgba(27, 86, 93, 0.2); }
+.login-card input:disabled { background: #e9e5dc; color: #526466; }
+.login-card button { background: #f6bd60; border: 0; border-radius: 999px; color: #12343b; font-weight: 800; padding: 1rem; }
+.login-card button:hover:not(:disabled), .login-card button:focus-visible { background: #ffe0a5; }
+.login-card button:disabled { cursor: not-allowed; opacity: 0.55; }
+.form-note { color: #526466; font-size: 0.9rem; line-height: 1.5; margin: 0; }
+.form-status { color: #1b565d; font-weight: 700; margin: 0; }
+
+.not-found { align-items: center; display: flex; flex-direction: column; justify-content: center; min-height: calc(100vh - 12rem); padding: 4rem 1.5rem; text-align: center; }
+.not-found strong { color: #ee6c4d; font-size: clamp(5rem, 18vw, 10rem); letter-spacing: -0.08em; line-height: 0.8; }
+.not-found h1 { font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.05em; margin: 1.5rem 0 0.6rem; }
+.not-found p { color: #526466; margin: 0 0 2rem; }
+.page-button { background: #1b565d; border-radius: 999px; color: #fff; font-weight: 800; padding: 1rem 1.5rem; }
+
+@media (max-width: 700px) { .about-content { grid-template-columns: 1fr; } .login-card { padding: 1.75rem; } }

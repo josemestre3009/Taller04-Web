@@ -1,0 +1,19 @@
+.header {
+  align-items: center;
+  background: #12343b;
+  color: #edf7f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem clamp(1.5rem, 4vw, 4rem);
+}
+
+.brand { color: #f6bd60; font-size: 1.6rem; font-weight: 800; letter-spacing: -0.06em; }
+.header nav { display: flex; gap: 2rem; }
+.header nav a:hover, .header nav a:focus-visible { color: #f6bd60; }
+.header nav a.active { color: #f6bd60; font-weight: 700; }
+.header nav .login-link { border: 1px solid #f6bd60; border-radius: 999px; padding: 0.45rem 0.9rem; }
+
+@media (max-width: 540px) {
+  .header { align-items: flex-start; gap: 1rem; flex-direction: column; }
+  .header nav { flex-wrap: wrap; gap: 1rem 1.25rem; }
+}

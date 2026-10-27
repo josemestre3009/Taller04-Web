@@ -1,0 +1,7 @@
+.courses { background: #f4f0e8; padding: 6rem clamp(1.5rem, 6vw, 8rem); }
+.section-heading { margin: 0 auto 3.2rem; max-width: 40rem; text-align: center; }
+.section-heading h2 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.05em; margin: 0 0 0.8rem; }
+.section-heading p { color: #5c6e70; margin: 0; }
+.course-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: auto; max-width: 92rem; }
+@media (max-width: 1024px) { .course-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .courses { padding-block: 4rem; } .course-grid { grid-template-columns: 1fr; } }
